@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --yellow-color:#FFFF00;
+    --yelow-light:#F8F184;
+    --blue-color:#19587D;
+    --red-color:#B11313;
+    --white-color:#FFFFFF;
+    --gradient-white: #eddebf7f;
+    --gradient-red: #8900096b;
+    --black-color: #000000;
+}
+
+/*Style générale*/
+
+h1{
+    font-family: 'rajdhani';
+    font-size: 36;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+button{
+    font-family: 'rajdhani';
+    font-size: 20;
+    font-weight: 400;
+}
+
+h2{
+    font-family: 'Space-Grotesk';
+    font-size: 36;
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Space-Grotesk';
+    font-size: 18;
+    font-weight: 400;
+}
+
+.container{
+    width: 85%;
+    margin: 0  auto;
+    border: #727272 solid 1px;
+    padding: 40px;
+}
+
+body{
+    background-image: url(../Illustrations/Bathome1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    border: 1px solid var(--gradient-white);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-family: 'Rajdhani'; 
+    font-weight: 0px ;
+    }
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 150;
+}
+
+/*Style de la nav*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+
+}
+ul{
+    display: flex;
+    list-style: none;  
+}
+
+li{
+    margin-right: 30px;
+}
+nav ul a{
+    color:var(--white-color);
+    font-size: 25px;
+    font-weight: 500px;
+    font-family: 'rajdhani';
+}
+ul a:hover{
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+
+.logo:hover{
+    filter: brightness(0) saturate(100%) invert(94%) sepia(60%) saturate(1971%) hue-rotate(358deg)
+    brightness(104%) contrast(102%);
+}
+
+/*design de l'entete (hero)*/
+#hero{
+    text-align: center;
+    background-size: cover;
+}
+
+#hero .titre{
+    margin: 20px 0;
+}
+
+.card-personnage{
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     margin-bottom: 40px;
+}
+
+.card-personnage h3{
+   margin-top: 20px;
+}
+
+.description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+}
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px ;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg, var(--gradient-white),var(--gradient-red)
+    );
+    box-shadow: var(--black-color) 5px 5px 60px;
+
+}
+
+.btn a:hover{
+ opacity: 100%;
+}
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 455px;
+}
+
+#imgallies{
+    display: flex;
+    margin-left: 68%;
+    margin-bottom: -60px;
+    margin-top: -100px;
+}
+
+/*design de l'entete (hero)*/
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: 80px;
+    top: 230px;
+    position: fixed;
+    right: 41px;
+    top: 210px;
+}
+
+.scroll .social{
+    margin-top: 15px;
+}
+
+/*design de la partie multimedia)*/
+
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+#multimedia button.right{
+    right: -85%;
+}
+#multimedia button.left{
+    left: 5%;
+}
+.slider-multimedia{
+    display: flex;
+    width: 70%;
+    margin: 40px auto;
+}
+
+.slider-image{
+    text-align: center;
+    width: 100%;
+}
+
+.slider-content{
+padding: 15px;
+background-color: #727272;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+#multimedia P{
+    font-size: 14px;
+}
+
+/*design de la partie contact Formulaire*/
+#contact{
+    background-color: darkslategrey;
+    padding: 70px 0;
+
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+
+}
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+#contact .titre{
+    display: block;
+    margin: 20px 0;
+}
+#contact .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid rgb(171, 168, 168);
+    width: 80%;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(171, 168, 168);
+
+}
+::placeholder{
+    color: #F8F184;
+    font-size: 15px;
+}
+
+#contact .btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.form input[type='radio']{
+opacity: 0;
+}
+.btn-group label{
+cursor: pointer;
+padding: 10px;
+border: 2px solid;
+border-image: linear-gradient(
+    69deg,red,blue
+)1;
+}
+input[type='submit']{
+    display: block;
+    margin: 25px auto;
+    width: 230px;
+    padding: 15px 0;
+    cursor: pointer;
+
+}
+
+/*design de la partie Citations*/
+
+#citations .citation-carte{
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
+
+#citations .citation-auteur{
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: 'radjhani';
+    color: #727272;
+
+}
+#citations .guillemets-close{
+    float: right;
+}
+
+/*design de la partie Footer*/
+
+.content-footer{
+    padding: 50px 0;
+}
+
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
